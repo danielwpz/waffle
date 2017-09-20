@@ -11,6 +11,10 @@
   ],
   "author": "Daniel Wang",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danielwpz/waffle.git"
+  },
   "dependencies": {
     "bluebird": "^3.5.0",
     "body-parser": "^1.18.1",
