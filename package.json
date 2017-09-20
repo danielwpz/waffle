@@ -1,0 +1,23 @@
+{
+  "name": "@danielwpz/waffle",
+  "version": "0.0.1",
+  "description": "Web framework for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Daniel Wang",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.18.1",
+    "compression": "^1.7.0",
+    "express": "^4.15.4",
+    "innjector": "0.0.2",
+    "lodash": "^4.17.4",
+    "winston": "^2.3.1"
+  }
+}
