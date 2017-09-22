@@ -27,7 +27,7 @@ class Waffle extends router {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
-    app.use(requestLogMiddleware);
+    app.use(requestLogMiddleware(this.config));
   }
 
   run(port) {
@@ -35,7 +35,7 @@ class Waffle extends router {
 
     app.use(this.router);
 
-    app.use(responseMiddleware.respond);
+    app.use(responseMiddleware.respondMiddleware(this.config));
     app.use(responseMiddleware.respondError);
 
     app.listen(port, function () {
