@@ -39,7 +39,7 @@ class Waffle extends router {
     app.use(responseMiddleware.respondError);
 
     app.listen(port, function () {
-      logger.notice(`[waffle] Server running on port ${port} ...`);
+      logger.notice(`Server running on port ${port} ...`);
     });
   }
 }
